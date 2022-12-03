@@ -1,0 +1,87 @@
+p {
+    color: black
+}
+
+body {
+    background-color: rgb(59, 57, 57);
+}
+
+#channelName {
+    color: white;
+}
+
+.chatContainer {
+    font-size: 16px;
+
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* margin: 0; */
+    border-radius: 5px;
+    margin: 5px;
+    background-color: rgb(127, 127, 192);
+}
+
+.myUsername {
+    color: rgb(16, 85, 31);
+    margin: 5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.myText {
+    word-break: break-all;
+    color: white;
+    margin: 5px;
+}
+
+.theirUsername {
+    color: rgb(117, 5, 5);
+    margin: 5px;
+}
+
+.theirText {
+    word-break: break-all;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+}
+
+#pikachu,
+#channelName {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(59, 57, 57);
+
+    /* background-color: rgb(59, 57, 57); */
+}
+
+input#message {
+    width: 89%;
+}
+
+button {
+    width: 10%;
+}
+
+h2.page-title,
+#threadInfo {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+nav.navbar.navbar-expand-lg {
+    background-color: rgb(59, 57, 57);
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+h1 {
+    color: white;
+}

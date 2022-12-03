@@ -1,0 +1,18 @@
+<h1 class="text-center" id="chName" data-channelID="{{channelID}}">{{channelName}}</h1>
+<h2 class="text-center" id="threadInfo" data-threadID="{{threadID}}">{{threadInfo}}: {{threadPoster}}</h2>
+
+<div>
+    {{#each messages as |message|}}
+    {{>message-details}}
+    {{/each}}
+</div>
+
+<button data-userID="{{userID}}" id="newCommentBtn">Add a New Comment</button>
+<br>
+<br>
+<div style="display:none" id="commentContainer">
+    <label for="newComment">What would you like to say?</label>
+    <input id="newComment">
+    <button id="submitComment">Submit</button>
+</div>
+<script src="/js/comment.js"></script>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chattastic</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.7.2.0.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/">Chattastic</a>
+            </button>
+            <div id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/chatroom">Live Chatroom</a>
+                    </li>
+                    {{#if loggedIn}}
+                    <li class="nav-item">
+                        <a class="nav-link" id="logout">Logout</a>
+                    </li>
+                    {{else}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    {{/if}}
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        {{{body}}}
+    </main>
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.7.2.0.js"></script>
+    <script src="/js/logout.js"></script>
+</body>
+
+</html>
